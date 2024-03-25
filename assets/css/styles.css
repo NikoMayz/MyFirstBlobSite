@@ -131,7 +131,81 @@ button:hover {
 
 .toggle-container input[type="checkbox"]:checked + .toggle-label:before {
     transform: translateX(20px);
+
 }
+
+/* General styles for the entire website */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Common styles for toggle switches */
+.toggle-container input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-container .toggle-label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-container .toggle-label:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-label {
+    background-color: #007bff;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-label:before {
+    transform: translateX(20px);
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .header {
+    background-color: #111111;
+}
+
+.dark-mode .post-item {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.dark-mode .footer {
+    background-color: #111111;
+    color: #ffffff;
+}
+
 
 /* Media query for smaller screens */
 
