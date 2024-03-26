@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Blog</title>
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your main CSS file -->
-    <link rel="stylesheet" href="assets/css/form.css"> <!-- Link to form specific CSS file -->
+    <link rel="stylesheet" href='assets/css/form.css'> <!-- Link to your main CSS file -->
+
 </head>
+
 <body>
     <div class="landing-container">
         <div class="toggle-container">
+
             <!-- Light/Dark mode toggle switch -->
             <input type="checkbox" id="mode-toggle">
             <label for="mode-toggle" class="toggle-label"></label>
@@ -23,15 +27,15 @@
             <form id="blog-form">
                 <div class="input-group">
                     <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" autocomplete="off" id="username" name="username" required>
                 </div>
                 <div class="input-group">
                     <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" required>
+                    <input type="text" autocomplete="off" id="title" name="title" required>
                 </div>
                 <div class="input-group">
                     <label for="content">Content:</label>
-                    <textarea id="content" name="content" rows="12" required></textarea>
+                    <textarea id="content" autocomplete="off" name="content" rows="12" required></textarea>
                 </div>
                 <button type="submit">Submit</button>
             </form>
@@ -41,8 +45,12 @@
             <!-- Light/Dark mode toggle switch -->
         </div>
     </div>
-    <script src="assets/js/form.js"></script> <!-- Link to your form specific JavaScript file -->
-    <script src="/assets/js/logic.js"></script> <!-- Link to your form specific JavaScript file -->
+
+    <script src='assets/js/form.js'></script> <!-- Link to your form specific JavaScript file -->
+    <script src='/assets/js/logic.js'></script> <!-- Link to your form specific JavaScript file -->
+
+
 
 </body>
+
 </html>

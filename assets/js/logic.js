@@ -1,15 +1,21 @@
 // Function to toggle between light and dark mode
-function toggleMode() {
-    const body = document.body;
-    const modeToggle = document.getElementById('mode-toggle');
+function toggleMode(modeToggle) {
+console.log(Math.random())
 
-    if (modeToggle.checked) {
+    const body = document.body;
+    if (darkStatus == false) {
+        darkStatus = true
         body.classList.add('dark-mode');
+        console.log("toggleModeCheck")
     } else {
+        darkStatus = false
         body.classList.remove('dark-mode');
+        console.log("toggleModeCheckelse")
+
     }
 }
 
+let darkStatus = false
 // Add event listener for mode toggle switch
 const modeToggle = document.getElementById('mode-toggle');
-modeToggle.addEventListener('change', toggleMode);
+modeToggle.addEventListener('click', toggleMode);
