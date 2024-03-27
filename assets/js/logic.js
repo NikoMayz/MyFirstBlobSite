@@ -1,4 +1,5 @@
-// Function to toggle between light and dark mode
+// Function to toggle between light and dark mode//
+
 function toggleMode(modeToggle) {
 console.log(Math.random())
 
@@ -16,6 +17,9 @@ console.log(Math.random())
 }
 
 let darkStatus = false
-// Add event listener for mode toggle switch
+
+// Add event listener for mode toggle switch//
+
+
 const modeToggle = document.getElementById('mode-toggle');
 modeToggle.addEventListener('click', toggleMode);
