@@ -81,13 +81,28 @@ body {
 .footer {
     text-align: center;
     margin-top: 20px;
+    
+
 }
 
 .footer a {
     text-decoration: none;
     color: #007bff;
+    
 }
 
 .footer a:hover {
     text-decoration: underline;
+}
+ul {
+    text-align: left; /* Justify the list to the left */
+    margin-left: 0; /* Remove default list margin */
+    padding-left: px; /* Remove default list padding */
+    list-style-type: none; /* Remove bullets */
+
+}
+
+h2, p {
+    text-align: center; /* Center the headings and paragraphs */
+
 }
